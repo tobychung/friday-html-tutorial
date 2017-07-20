@@ -1,0 +1,17 @@
+
+*~
+
+**/.DS_Store
+**/node_modules
+/node_modules
+/uploads/thumbs/*.*
+/uploads/thumbs_base64/*.*
+/uploads/*/*.*
+
+/log
+
+/*/thumbs
+
+
+.sass-cache/
+*.css.map

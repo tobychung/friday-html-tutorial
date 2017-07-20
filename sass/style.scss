@@ -1,0 +1,20 @@
+
+
+/*------ BASIC -------*/
+@import "base.scss";
+
+/*------ LAYOUT -------*/
+@import "page.scss";
+
+
+
+/*------ COMPONENTS -------*/
+
+@import "../components/LandingPage/landingPage.scss";
+@import "../components/Carousel/carousel.scss";
+@import "../components/navi/navi.scss";
+@import "../components/List/list.scss";
+@import "../components/Data/data.scss";
+@import "../components/Note/note.scss";
+
+/*------ @import "../components/xxxx.scss"; -------*/ 

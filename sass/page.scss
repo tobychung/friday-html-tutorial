@@ -1,0 +1,198 @@
+//=========== 只處理bg & container =============//
+
+
+
+.header-bg {
+	@include rect(100%,600px);
+
+	background-color: #ccc;
+	background-image: url(../images/kv-bg.jpg);
+	text-align: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden; 
+    
+    .banner-container{
+        margin-top: 10px;
+    }
+
+	img{
+        @include center;
+        // margin-top: 50px;
+	}
+
+	.text{
+        @include center;
+        font-size: 14px;
+        color: #fff;
+        width: 690px;
+        margin-top: 20px;
+        display: block;
+        line-height: 25px;
+	}
+
+    // fb-btn
+    .fb-all{
+        @include rect-center(900px,60px);
+        // border: 1px dotted $peach-pink;
+        overflow: hidden;
+        a{
+
+            .btn-share{
+               @include rect(40px,40px);
+               background-image: url(../images/facebook.jpg);
+               background-size: 100%;
+               float: right;
+               margin-top: 18px;
+
+            }
+
+            .line-share{
+                @include rect(40px,40px);
+               background-image: url(../images/line.jpg);
+               background-size: 100%;
+               float: right;
+               margin-top: 18px;
+               margin-right: 8px;
+               display: none;
+            }
+        }
+  
+    }
+        
+
+}
+
+
+// ---------  carousel  -----------//
+.carousel-bg{
+
+	@include rect(100%,390px);
+	background-image: url('../images/scenario-bg/carousel-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+	.carousel-container{
+		
+		// @include rect-center(520px,280px);
+        position: relative;
+        margin-top: 50px;
+
+	}
+}
+
+
+// ---------  footer  -----------//
+
+.footer-bg{
+
+    @include rect(100%,45px);
+    background-color: $peach-pink;
+    // padding-top: 25px;
+    color:#fff;
+    text-align: center;
+    overflow: hidden;
+
+
+    p{
+        font-size: 12px;
+        cursor:default;
+        margin-top: 18px;
+    }
+
+
+
+
+}
+
+//tablet
+@media (max-width: $tablet) { 
+
+    .header-bg {
+        @include rect-center(100%,680px);
+        
+        .banner-container{
+            margin-top: 50px;
+        }
+
+        img{
+            width: 450px;
+        }
+
+        .text{
+            width: 450px;
+        }
+
+        .fb-all{
+        @include rect-center(600px,60px);
+        }
+
+
+    }
+
+
+}
+
+
+
+//phone
+@media (max-width: $phone) { 
+
+
+    .header-bg {
+        @include rect-center(100%,675px);
+
+        .banner-container{
+            margin-top: 50px;
+        }
+
+        img{
+            width: 280px;
+        }
+
+        .text{
+            width: 280px;
+            font-size: 12px;
+            line-height: 22px;
+            margin-top: 30px;
+        }
+
+        .fb-all{
+            @include rect-center(300px,60px);
+            a{
+                .btn-share{
+                    @include rect-center(30px,30px);
+                    margin-right: 10px; 
+                }
+
+                .line-share{
+                    @include rect-center(30px,30px);
+                    display: block;
+                    margin-right: 10px; 
+                }
+            }
+        }
+    }
+    
+    // carousel
+    .carousel-bg{
+        @include rect(100%,220px);
+
+        .carousel-container{
+            margin-top: 20px;
+        }
+    }
+
+    // footer-mobile 
+    .footer-bg{
+
+         p{
+            margin-top: 10px;
+        }
+    }
+
+    
+}
+
+

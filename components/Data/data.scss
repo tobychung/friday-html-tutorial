@@ -1,0 +1,162 @@
+//版本1 
+.data-in-section-01{
+	
+	.data-comp{
+
+		@include rect(700px,850px);
+		border: 2px dotted $green;
+
+		li{
+
+			@include rect(335px,455px);
+			border: 2px solid $peach-pink;
+
+			.title{
+
+				@include rect(335px,40px);
+				border-top: 10px solid $peach-pink;
+				color: $peach-pink;
+				
+				h2{
+
+					font-size: 24px;
+					margin-top: 10px;
+
+				}
+
+			}
+			
+
+			.number-container{
+
+				@include rect(335px,95px);
+				margin-top: 10px;
+
+				.percent{
+					
+					@include rect(135px,95px);
+					float: left;
+
+				}
+
+				.result{
+
+					@include rect(140px,70px);
+					border: 2px solid $dark-blue;
+					float: right;
+					font-size: 18px;
+					line-height: 26px;
+					color: $peach-pink;
+					font-weight: bold;
+				}
+
+			}
+
+			.text{
+
+				@include rect(335px,100px);
+				border: 2px dotted #bbb;
+	    		margin-top: 15px;
+	    		color: #5E4B4B;
+				font-size: 16px;
+				line-height: 28px;
+	    		border-top: 1px solid $peach-pink;
+				padding-top: 10px;
+			
+			}
+
+			.list{
+
+				@include rect(335px,160px);
+				border: 2px dotted $dark-blue;
+				padding-top: 10px;
+
+				span{
+					
+
+					margin-top: 8px;
+					
+					display: block;
+				}
+				
+			}
+
+
+		}
+	}
+
+}
+
+
+//版本2
+.data-in-section-02{
+	
+	.data-comp{
+
+		@include rect(700px,850px);
+		border: 2px dotted $green;
+
+		li{
+
+			@include rect(335px,455px);
+			border: 2px solid $peach-pink;
+
+			.title{
+				
+				display: none;
+
+			}
+			
+
+			.number-container{
+
+				@include rect(335px,95px);
+				margin-top: 10px;
+
+				.percent{
+					
+					@include rect(135px,95px);
+					float: left;
+
+				}
+
+				.result{
+
+					display: none;
+				}
+
+			}
+
+			.text{
+
+				@include rect(335px,100px);
+				border: 2px dotted #bbb;
+	    		margin-top: 15px;
+	    		color: $peach-pink;
+				font-size: 16px;
+				line-height: 28px;
+	    		border-top: 1px solid $peach-pink;
+				padding-top: 10px;
+			
+			}
+
+			.list{
+
+				@include rect(335px,160px);
+				border: 2px dotted $dark-blue;
+				padding-top: 10px;
+
+				span{
+					
+					margin-top: 8px;	
+					display: block;
+
+				}
+				
+			}
+
+
+		}
+	}
+
+}

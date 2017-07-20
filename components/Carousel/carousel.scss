@@ -1,0 +1,86 @@
+//版本1
+.carousel-in-main{
+
+
+    .unslider{
+        
+        @include center;
+        overflow: inherit;
+        // width: 70%; 本來是
+        width: 520px;
+
+        img{
+
+            width: 100%;
+        }
+
+        .carousel-comp{
+
+            // @include rect-center(520px,280px);
+            // @include rect-center(80%,172px);
+
+
+        }
+        
+        .unslider-arrow{
+            
+            position: relative;
+            margin-top: -27%;
+
+        }
+
+        .arrow-right {
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+          
+            border-left: 10px solid #0D0E4C;
+            
+            
+            margin-left: auto;
+            right: -20px;
+            float: right;
+            
+        }
+
+        .arrow-left {
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent; 
+            border-right:10px solid #0D0E4C; 
+
+            
+            left: -20px;
+            margin-right: auto;
+            float: left;
+            
+        }
+    }
+
+   
+
+
+    .nav-num{
+
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+
+
+    }
+
+
+}
+
+
+@media (max-width: $phone) { 
+
+    .carousel-in-main{
+        .unslider{
+            width: 320px;
+        }
+    }
+
+}

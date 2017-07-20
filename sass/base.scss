@@ -1,0 +1,155 @@
+/*------- COLOR -------*/
+
+
+$dark-blue: #101045;
+$peach-pink: #FF0483;
+$green: #39DEDA;
+
+
+
+
+/*------- RWD -------*/
+
+
+// @media (max-width: $tablet) { }
+
+
+
+
+$iphone5: 320px;
+$iphone6: 375px;
+$iphone6P: 414px;
+
+
+$phone: 420px;
+$tablet: 768px;
+$computer: 1280px;
+
+
+/*------- Guideline -------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------- MIXIN -------*/
+@mixin center{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@mixin margin($px){
+
+    margin-left: $px;
+    margin-right: $px;
+}
+
+@mixin rect($w,$h){
+
+    width: $w;
+    height: $h;
+}
+
+@mixin rect-center($w,$h){
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: $w;
+    height: $h;
+}
+
+
+@mixin square($px){
+
+    width: $px;
+    height: $px;
+}
+
+@mixin circle($px){
+
+    width: $px;
+    height: $px;
+    border-radius: 99em;
+}
+
+@mixin bg-cover($url){
+
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+@mixin text-center{
+
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    cursor: default;
+
+}
+
+@mixin text-middle($height){
+
+    height: $height;
+    line-height: $height;
+
+}
+
+
+
+
+/*------- FAKE IMG -------*/
+
+// src="http://fakeimg.pl/200x200/"
+
+/*------- BASE -------*/
+
+body{
+    
+    font-family: "微軟正黑體", "Microsoft JhengHei", Verdana, Arial, Helvetica, sans-serif; 
+}
+
+ul{
+
+    padding: 0;
+    list-style-type: none;
+
+
+    li{
+
+        cursor:pointer !important;
+    }
+}
+
+li{
+        list-style:none;
+        cursor:pointer !important;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+img{
+
+    display:block;
+}
+
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+

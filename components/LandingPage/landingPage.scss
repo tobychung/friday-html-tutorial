@@ -1,0 +1,264 @@
+
+.scenario-grp{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    img{
+
+        @include center;
+        margin-top: 40px;
+           
+    }
+
+}
+
+
+.scenario-01{
+    
+    @include rect(100%,1487px);
+    background-image: url("../images/scenario-bg/1-bg.jpg");
+    
+    img{
+        
+    }
+}
+
+.scenario-02{
+    @include rect(100%,1609px);
+    background-image: url("../images/scenario-bg/2-bg.jpg");
+    overflow: hidden;
+    
+    img{
+        
+    }
+
+}
+
+.scenario-03{
+    @include rect(100%,350px);
+    background-image: url("../images/scenario-bg/3-bg.jpg");
+    img{
+        
+    }
+
+}
+
+.scenario-04{
+    @include rect(100%,710px);
+    background-image: url("../images/scenario-bg/4-bg.png");
+    img{
+        
+    }
+
+}
+
+.scenario-05{
+    @include rect(100%,1010px);
+    background-image: url("../images/scenario-bg/5-bg.jpg");
+    
+    img{
+        
+    }
+
+}
+
+
+.scenario-06{
+    @include rect(100%,2136px);
+    background-image: url("../images/scenario-bg/6-bg.png");
+    img{
+       margin-top: 30px;
+    }
+
+}
+
+
+.scenario-07{
+    @include rect(100%,2945px);
+    background-image: url("../images/scenario-bg/7-bg.jpg");
+    img{
+        
+    }
+
+}
+
+
+.scenario-08{
+    @include rect(100%,801px);
+    background-image: url("../images/scenario-bg/8-bg.png");
+    img{
+
+    }
+
+}
+
+
+.scenario-09{
+    @include rect(100%,1359px);
+    background-image: url("../images/scenario-bg/9-bg.jpg");
+    img{
+
+    }
+
+}
+
+
+// 共同設定
+.img-m{
+
+    display: block;
+}
+.img-s{
+
+    display: none;
+}
+
+// 平板
+@media (max-width: $tablet) { 
+
+        
+    .scenario-grp{
+        
+        img{
+
+            width: 400px;
+            margin-top: 30px;
+        }
+
+    }
+
+    .scenario-01{
+        @include rect(100%,900px);
+        img{    
+        }
+    }
+
+    .scenario-02{
+        @include rect(100%,950px);
+        img{         
+        }
+    }
+
+    .scenario-03{
+        @include rect(100%,225px);
+        img{    
+        }
+    }
+
+    .scenario-04{
+        @include rect(100%,430px);
+        img{    
+        }
+    }
+
+    .scenario-05{
+        @include rect(100%,625px);
+        img{    
+        }
+    }
+
+    .scenario-06{
+        @include rect(100%,1280px);
+        img{    
+        }
+    }
+
+    .scenario-07{
+        @include rect(100%,1730px);
+        img{ 
+
+        }
+    }
+
+    .scenario-08{
+        @include rect(100%,510px);
+        img{    
+        }
+    }
+
+    .scenario-09{
+        @include rect(100%,810px);
+        
+    }    
+
+}
+
+
+@media (max-width: $phone) { 
+
+    
+     .scenario-grp{
+        
+        
+        img{
+            width: 320px;
+            margin-top: 10px;
+        }
+
+    }
+
+
+    .img-m{
+
+        display: none;
+    }
+    .img-s{
+
+        display:block;
+    }
+    
+
+    //手機版
+    .scenario-01{
+        @include rect(100%,810px);
+        img{
+            margin-top: 20px;
+        }
+
+    }
+
+    .scenario-02{
+        @include rect(100%,1025px); 
+    }
+
+    .scenario-03{
+        @include rect(100%,250px); 
+    }
+
+    .scenario-04{
+        @include rect(100%,410px); 
+    }
+
+    .scenario-05{
+        @include rect(100%,730px); 
+    }
+
+    .scenario-06{
+        @include rect(100%,1340px); 
+    }
+
+    .scenario-07{
+        @include rect(100%,1080px);  
+        img{   
+             margin-top: 20px;   
+        }   
+    }
+
+    .scenario-08{
+        @include rect(100%,500px); 
+    }
+
+    .scenario-09{
+        @include rect(100%,800px); 
+    }
+
+
+
+}
+
+
+
+
+
+

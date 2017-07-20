@@ -1,0 +1,36 @@
+//版本1 
+.list-in-section-01{
+	.list-comp{
+
+		@include rect(340px,300px);
+		
+		li{
+
+			@include rect(340px,100px);
+			.top-container{
+				@include rect(340px,65px);
+
+				img{
+				}
+
+				.icon{
+
+					@include rect(100px,70px);
+					float: left;
+				}
+
+				.percent{
+					@include rect(165px,70px);
+					float: right;
+				}
+			}
+
+			.info{
+				
+				@include rect(340px,35px);
+				margin-top: 20px;
+				border-top: 1px solid $dark-blue; 
+			}
+		}
+	}
+}

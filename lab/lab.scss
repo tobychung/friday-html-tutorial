@@ -1,0 +1,181 @@
+// ---------  section-01-bg  -----------//
+.section-01-bg{
+
+    @include rect(100%,1700px);
+    background-color: #FAECE5;
+    overflow: hidden;
+
+    .title-container{
+        @include rect-center(700px,50px);
+        border: 2px solid #222;
+
+        h1{
+        color: $dark-blue;
+        }
+    }
+    
+    // highlight-container
+    .highlight-container{
+
+        @include rect-center(700px,600px);
+        border: 2px solid #444;
+        border-top: 10px solid $dark-blue;
+
+
+        .left-container{
+            
+            @include rect(300px,500px);
+            float: left;
+            border: 2px solid #444;
+            
+            .img-container{
+
+                @include rect-center(300px,300px);
+
+                .percent{
+                @include rect-center(200px,200px);
+                }
+
+            }
+            
+            .info-container{
+
+                @include rect(300px,300px);
+                border-top: 1px solid $dark-blue;
+                overflow: hidden;
+                
+                img{
+                    
+                    @include rect(100px,100px);
+                    background-color: #888;
+                    float: left;
+                    margin-top: 10px;
+
+                }
+
+                span{
+
+                    @include rect(150px,100px);
+                    float: left; 
+                    margin-top: 10px;
+
+                }
+            }
+
+        }
+
+
+        .right-container{
+            @include rect(340px,500px);
+            float: right;
+            border: 2px solid #444;
+
+            .list-container{
+                    
+                @include rect(340px,300px);
+                border: 2px solid #444;
+
+            }
+        }
+
+    }
+
+    // data-container
+    .data-container{
+
+        @include rect-center(700px,850px);
+        border: 2px solid #444;
+    }
+
+    // note-container
+    .note-container{
+
+        @include rect-center(700px,100px);
+        background-color: $green;
+    }
+
+}
+// --------- ↑↑↑ section-01-bg ↑↑↑  -----------//
+
+    
+
+
+
+// ---------  section-02-bg  -----------//
+
+.section-02-bg{
+    @include rect(100%,1680px);
+    background-color: #FFDCE3;
+
+    .title-container{
+        @include rect-center(700px,50px);
+        border: 2px dotted #222;
+
+        h1{
+        color: $dark-blue;
+        }
+    }
+
+
+
+}
+// --------- ↑↑↑ section-02-bg ↑↑↑  -----------//
+
+
+
+// ---------  section-03-bg  -----------//
+
+.section-03-bg{
+    @include rect(100%,375px);
+    background-color: #E4FBF9;
+
+    .title-container{
+        @include rect-center(700px,50px);
+        border: 2px dotted #222;
+
+        h1{
+        color: $dark-blue;
+        }
+    }
+
+}
+// --------- ↑↑↑ section-03-bg ↑↑↑  -----------//
+
+
+// ---------  section-04-bg  -----------//
+
+.section-04-bg{
+    @include rect(100%,760px);
+    background-color: #FFDCE3;
+
+    .title-container{
+        @include rect-center(700px,50px);
+        border: 2px dotted #222;
+
+        h1{
+        color: $dark-blue;
+        }
+    }
+
+}
+// --------- ↑↑↑ section-04-bg ↑↑↑  -----------//
+
+
+
+// ---------  section-05-bg  -----------//
+
+.section-05-bg{
+    @include rect(100%,760px);
+    background-color: #FFDCE3;
+
+    .title-container{
+        @include rect-center(700px,50px);
+        border: 2px dotted #222;
+
+        h1{
+        color: $dark-blue;
+        }
+    }
+
+}
+// --------- ↑↑↑ section-05-bg ↑↑↑  -----------//

@@ -1,0 +1,155 @@
+.navi-comp{
+
+	@include rect-center(100%,45px);
+	// background-color: #bbb;
+	color: #fff;
+	background-color: #ff0f86;
+	font-weight: bold;
+	
+
+	.left-container{
+
+		width: 350px;
+		height: 40px;
+		margin-left: 40px;
+		float: left;
+		// border:1px dashed #fff;
+		
+
+		a{
+			font-size: 16px;
+			float: left;
+			color: #fff;
+			padding-top: 14px;
+
+		}
+
+		span{
+
+			font-size: 10px;
+			float: right;
+			padding-top: 20px;
+		}
+	}
+
+	.right-container{
+		
+		@include rect(200px,40px);
+		// width: 200px;
+		// height: 40px;
+		margin-right: 40px;
+		float: right;
+		// border:1px dashed #fff;
+		padding-top: 14px;
+		// 共同的
+		a{
+			
+			font-size: 16px;
+			color:#fff;
+			
+		}
+
+		// 分別制定
+		.link-preview{
+			float: left;
+		}
+
+		.link-index{
+
+			float: right;
+		}
+
+	}
+}
+
+// ---------  mobile nav bar  -----------//
+// mobile nav 
+.main-nav{
+	top: 0px;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    display:none;
+
+
+	.toggletext{
+		position: absolute;
+	    left: 5%;
+	    z-index: 999;
+	    font-size: 16px;
+	    line-height: 45px;
+	    color: #fff;
+	    font-weight: bold;
+
+	}
+
+	.toggleMenu{
+		display: inline-block;
+	    box-sizing: border-box;
+	    padding: 10px;
+	    height: 45px;
+	    line-height: 25px;
+	    width: 100%;
+	    background: $peach-pink;
+	    color: #afa7a7;
+	    text-align: left;
+
+	    img {
+    		float: right;
+    		@include rect(30px,30px);
+		}
+	}
+
+	.nav{
+		display: block;
+		margin: 0px;
+		a{
+			height: 30px;
+		    line-height: 28px;
+		    border-top: 1px solid #fff;
+		    color: #fff;
+		    display: block;
+    		text-align: center
+		}
+
+		li{
+			background: $peach-pink;
+			margin-top: -4px;
+    		margin-bottom: 4px;
+    		border-top: 1px solid #fff;
+		}
+	}
+
+	.nav:after {
+    	clear: both;
+	}
+
+}
+
+// 平板時
+@media (max-width: $tablet) { 
+	.navi-comp{
+		display:none;
+	}
+
+	.main-nav {
+		display:block;
+	}
+
+}
+
+
+
+// 手機板 
+@media (max-width: $phone) { 
+
+	.navi-comp{
+		display:none;
+	}
+
+	.main-nav {
+		display:block;
+	}
+
+
+}
