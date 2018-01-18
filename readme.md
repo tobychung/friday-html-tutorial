@@ -96,3 +96,8 @@
 5. 打開網頁 🎉🎉🎉
 
 	[http://localhost:8080](http://localhost:8080)
+
+
+### 環境
+
+NodeJS: v6.6
